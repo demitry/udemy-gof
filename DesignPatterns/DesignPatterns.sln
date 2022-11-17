@@ -39,6 +39,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PatternLibrary", "PatternLi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FacetedBuilder", "Creational\Builder\FacetedBuilder\FacetedBuilder.csproj", "{A5AF7734-B20D-4502-A63A-FB797D993A78}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExerciseCodeBuilder", "Creational\Builder\ExerciseCodeBuilder\ExerciseCodeBuilder.csproj", "{86100A4C-E216-4E60-8590-81855061473D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -93,6 +95,10 @@ Global
 		{A5AF7734-B20D-4502-A63A-FB797D993A78}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A5AF7734-B20D-4502-A63A-FB797D993A78}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A5AF7734-B20D-4502-A63A-FB797D993A78}.Release|Any CPU.Build.0 = Release|Any CPU
+		{86100A4C-E216-4E60-8590-81855061473D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86100A4C-E216-4E60-8590-81855061473D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86100A4C-E216-4E60-8590-81855061473D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86100A4C-E216-4E60-8590-81855061473D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -112,6 +118,7 @@ Global
 		{583E7D63-D8F0-46BC-A0AE-1CDDD6B90E61} = {16024414-BD5F-4057-848E-89A45E46D839}
 		{6A70F3F4-58A8-4CE8-BBA0-1DC532EEF04F} = {16024414-BD5F-4057-848E-89A45E46D839}
 		{A5AF7734-B20D-4502-A63A-FB797D993A78} = {16024414-BD5F-4057-848E-89A45E46D839}
+		{86100A4C-E216-4E60-8590-81855061473D} = {D3CE65B9-8EA8-4CD6-8F6D-B481FBE2A8A4}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {05F4A807-3724-4A59-AE0F-2D18463B8EB6}
