@@ -37,6 +37,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FunctionalBuilder", "Creati
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PatternLibrary", "PatternLibrary\PatternLibrary.csproj", "{1A15A6D7-5F6B-44CF-BA7A-172B7B351910}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FacetedBuilder", "Creational\Builder\FacetedBuilder\FacetedBuilder.csproj", "{A5AF7734-B20D-4502-A63A-FB797D993A78}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -87,6 +89,10 @@ Global
 		{1A15A6D7-5F6B-44CF-BA7A-172B7B351910}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1A15A6D7-5F6B-44CF-BA7A-172B7B351910}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1A15A6D7-5F6B-44CF-BA7A-172B7B351910}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A5AF7734-B20D-4502-A63A-FB797D993A78}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A5AF7734-B20D-4502-A63A-FB797D993A78}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A5AF7734-B20D-4502-A63A-FB797D993A78}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A5AF7734-B20D-4502-A63A-FB797D993A78}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -105,6 +111,7 @@ Global
 		{7A35D753-6AB9-4EB1-8EE6-890AE7CCADF0} = {16024414-BD5F-4057-848E-89A45E46D839}
 		{583E7D63-D8F0-46BC-A0AE-1CDDD6B90E61} = {16024414-BD5F-4057-848E-89A45E46D839}
 		{6A70F3F4-58A8-4CE8-BBA0-1DC532EEF04F} = {16024414-BD5F-4057-848E-89A45E46D839}
+		{A5AF7734-B20D-4502-A63A-FB797D993A78} = {16024414-BD5F-4057-848E-89A45E46D839}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {05F4A807-3724-4A59-AE0F-2D18463B8EB6}
