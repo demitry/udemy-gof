@@ -51,6 +51,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Factory", "Creational\Facto
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ObjectTrackingAndBulkReplacement", "Creational\Factories\ObjectTrackingAndBulkReplacement\ObjectTrackingAndBulkReplacement.csproj", "{E9186DAD-BDB8-4FE3-8D71-34490B1B2F73}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InnerFactory", "Creational\Factories\InnerFactory\InnerFactory.csproj", "{31E31955-CD9D-4120-83C4-121C78199DDD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -125,6 +127,10 @@ Global
 		{E9186DAD-BDB8-4FE3-8D71-34490B1B2F73}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E9186DAD-BDB8-4FE3-8D71-34490B1B2F73}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E9186DAD-BDB8-4FE3-8D71-34490B1B2F73}.Release|Any CPU.Build.0 = Release|Any CPU
+		{31E31955-CD9D-4120-83C4-121C78199DDD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31E31955-CD9D-4120-83C4-121C78199DDD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31E31955-CD9D-4120-83C4-121C78199DDD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31E31955-CD9D-4120-83C4-121C78199DDD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -150,6 +156,7 @@ Global
 		{73F0B395-286E-4E39-817D-C45F74D2804A} = {E3F3FD11-75C3-467D-92B9-A010AC93CF42}
 		{6D080F47-EDC2-4700-9566-61022F99C1F9} = {E3F3FD11-75C3-467D-92B9-A010AC93CF42}
 		{E9186DAD-BDB8-4FE3-8D71-34490B1B2F73} = {E3F3FD11-75C3-467D-92B9-A010AC93CF42}
+		{31E31955-CD9D-4120-83C4-121C78199DDD} = {E3F3FD11-75C3-467D-92B9-A010AC93CF42}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {05F4A807-3724-4A59-AE0F-2D18463B8EB6}
