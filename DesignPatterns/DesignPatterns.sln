@@ -45,13 +45,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PointExampleMotivation", "C
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Factories", "Factories", "{E3F3FD11-75C3-467D-92B9-A010AC93CF42}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsyncFactoryMethod", "Creational\Factories\AsyncFactoryMethod\AsyncFactoryMethod.csproj", "{73F0B395-286E-4E39-817D-C45F74D2804A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AsyncFactoryMethod", "Creational\Factories\AsyncFactoryMethod\AsyncFactoryMethod.csproj", "{73F0B395-286E-4E39-817D-C45F74D2804A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Factory", "Creational\Factories\Factory\Factory.csproj", "{6D080F47-EDC2-4700-9566-61022F99C1F9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Factory", "Creational\Factories\Factory\Factory.csproj", "{6D080F47-EDC2-4700-9566-61022F99C1F9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ObjectTrackingAndBulkReplacement", "Creational\Factories\ObjectTrackingAndBulkReplacement\ObjectTrackingAndBulkReplacement.csproj", "{E9186DAD-BDB8-4FE3-8D71-34490B1B2F73}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ObjectTrackingAndBulkReplacement", "Creational\Factories\ObjectTrackingAndBulkReplacement\ObjectTrackingAndBulkReplacement.csproj", "{E9186DAD-BDB8-4FE3-8D71-34490B1B2F73}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InnerFactory", "Creational\Factories\InnerFactory\InnerFactory.csproj", "{31E31955-CD9D-4120-83C4-121C78199DDD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InnerFactory", "Creational\Factories\InnerFactory\InnerFactory.csproj", "{31E31955-CD9D-4120-83C4-121C78199DDD}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AbstractFactory", "Creational\Factories\AbstractFactory\AbstractFactory.csproj", "{6ED69C6D-1DF7-49C6-85D8-FDDF33895705}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -131,6 +133,10 @@ Global
 		{31E31955-CD9D-4120-83C4-121C78199DDD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{31E31955-CD9D-4120-83C4-121C78199DDD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{31E31955-CD9D-4120-83C4-121C78199DDD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6ED69C6D-1DF7-49C6-85D8-FDDF33895705}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6ED69C6D-1DF7-49C6-85D8-FDDF33895705}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6ED69C6D-1DF7-49C6-85D8-FDDF33895705}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6ED69C6D-1DF7-49C6-85D8-FDDF33895705}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -157,6 +163,7 @@ Global
 		{6D080F47-EDC2-4700-9566-61022F99C1F9} = {E3F3FD11-75C3-467D-92B9-A010AC93CF42}
 		{E9186DAD-BDB8-4FE3-8D71-34490B1B2F73} = {E3F3FD11-75C3-467D-92B9-A010AC93CF42}
 		{31E31955-CD9D-4120-83C4-121C78199DDD} = {E3F3FD11-75C3-467D-92B9-A010AC93CF42}
+		{6ED69C6D-1DF7-49C6-85D8-FDDF33895705} = {E3F3FD11-75C3-467D-92B9-A010AC93CF42}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {05F4A807-3724-4A59-AE0F-2D18463B8EB6}
