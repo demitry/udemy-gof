@@ -34,21 +34,21 @@ class Person : ICloneable //we don't know is it deep or shalow cloning? shalow c
 public class Address: ICloneable
 {
     private string StreetName;
-    public int HouseBumber;
+    public int HouseNumber;
     
     public override string ToString()
     {
-        return $"{StreetName} {HouseBumber}";
+        return $"{StreetName} {HouseNumber}";
     }
 
     public object Clone()
     {
-        return new Address(StreetName, HouseBumber);
+        return new Address(StreetName, HouseNumber);
     }
 
     public Address(string streetName, int houseBumber)
     {
         StreetName = streetName;
-        HouseBumber = houseBumber;
+        HouseNumber = houseBumber;
     }
 }

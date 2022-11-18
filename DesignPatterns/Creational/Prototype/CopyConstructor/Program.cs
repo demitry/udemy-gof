@@ -5,7 +5,7 @@ var jane = new Person(john);
 jane.Address.HouseNumber = 321;
 Console.WriteLine(jane);
 
-// Copy Ctor - C++ Approuch, not good for us...
+// Copy Ctor - C++ approach, still not good for us...
 
 class Person
 {
