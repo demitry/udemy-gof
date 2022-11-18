@@ -57,6 +57,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AbstractFactory", "Creation
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExerciseCodingFactory", "Creational\Factories\ExerciseCodingFactory\ExerciseCodingFactory.csproj", "{4188C30E-C7B5-40FB-8D3E-4BFA08213B63}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Prototype", "Prototype", "{2C32A587-E6DD-4075-9A89-D05B8653A91D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BadIClonable", "Creational\Prototype\BadIClonable\BadIClonable.csproj", "{C4AF51B3-F6FD-4B25-BA7C-5C646C18AE35}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -143,6 +147,10 @@ Global
 		{4188C30E-C7B5-40FB-8D3E-4BFA08213B63}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4188C30E-C7B5-40FB-8D3E-4BFA08213B63}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4188C30E-C7B5-40FB-8D3E-4BFA08213B63}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C4AF51B3-F6FD-4B25-BA7C-5C646C18AE35}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C4AF51B3-F6FD-4B25-BA7C-5C646C18AE35}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C4AF51B3-F6FD-4B25-BA7C-5C646C18AE35}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C4AF51B3-F6FD-4B25-BA7C-5C646C18AE35}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -171,6 +179,8 @@ Global
 		{31E31955-CD9D-4120-83C4-121C78199DDD} = {E3F3FD11-75C3-467D-92B9-A010AC93CF42}
 		{6ED69C6D-1DF7-49C6-85D8-FDDF33895705} = {E3F3FD11-75C3-467D-92B9-A010AC93CF42}
 		{4188C30E-C7B5-40FB-8D3E-4BFA08213B63} = {E3F3FD11-75C3-467D-92B9-A010AC93CF42}
+		{2C32A587-E6DD-4075-9A89-D05B8653A91D} = {D3CE65B9-8EA8-4CD6-8F6D-B481FBE2A8A4}
+		{C4AF51B3-F6FD-4B25-BA7C-5C646C18AE35} = {2C32A587-E6DD-4075-9A89-D05B8653A91D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {05F4A807-3724-4A59-AE0F-2D18463B8EB6}
