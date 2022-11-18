@@ -1,6 +1,10 @@
 ﻿Console.WriteLine("Fix public constructor issue with inner factory class:");
 var p = Point.Factory.NewCartesianPoint(3, 4);
+// Similar to Task.Factory.StartNew() in .NET
 Console.WriteLine("Point: " + p);
+
+var origin = Point.Origin;
+var origin2 = Point.Origin2; //better
 
 public class Point
 {
@@ -14,6 +18,10 @@ public class Point
 
     public override string ToString() => $"{nameof(x)}:{x}, {nameof(y)}: {y}";
     
+    public static Point Origin => new Point(0, 0);
+
+    public static Point Origin2 = new Point(0, 0); //singleton, better
+
     //public static PointFactory Factory => new PointFactory();
 
     public static class Factory
