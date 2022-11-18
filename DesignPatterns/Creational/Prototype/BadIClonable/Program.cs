@@ -46,9 +46,9 @@ public class Address: ICloneable
         return new Address(StreetName, HouseNumber);
     }
 
-    public Address(string streetName, int houseBumber)
+    public Address(string streetName, int houseNumber)
     {
         StreetName = streetName;
-        HouseNumber = houseBumber;
+        HouseNumber = houseNumber;
     }
 }
