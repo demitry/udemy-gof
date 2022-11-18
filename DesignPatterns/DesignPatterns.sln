@@ -49,6 +49,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsyncFactoryMethod", "Creat
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Factory", "Creational\Factories\Factory\Factory.csproj", "{6D080F47-EDC2-4700-9566-61022F99C1F9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ObjectTrackingAndBulkReplacement", "Creational\Factories\ObjectTrackingAndBulkReplacement\ObjectTrackingAndBulkReplacement.csproj", "{E9186DAD-BDB8-4FE3-8D71-34490B1B2F73}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -119,6 +121,10 @@ Global
 		{6D080F47-EDC2-4700-9566-61022F99C1F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6D080F47-EDC2-4700-9566-61022F99C1F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6D080F47-EDC2-4700-9566-61022F99C1F9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E9186DAD-BDB8-4FE3-8D71-34490B1B2F73}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E9186DAD-BDB8-4FE3-8D71-34490B1B2F73}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E9186DAD-BDB8-4FE3-8D71-34490B1B2F73}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E9186DAD-BDB8-4FE3-8D71-34490B1B2F73}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -143,6 +149,7 @@ Global
 		{E3F3FD11-75C3-467D-92B9-A010AC93CF42} = {D3CE65B9-8EA8-4CD6-8F6D-B481FBE2A8A4}
 		{73F0B395-286E-4E39-817D-C45F74D2804A} = {E3F3FD11-75C3-467D-92B9-A010AC93CF42}
 		{6D080F47-EDC2-4700-9566-61022F99C1F9} = {E3F3FD11-75C3-467D-92B9-A010AC93CF42}
+		{E9186DAD-BDB8-4FE3-8D71-34490B1B2F73} = {E3F3FD11-75C3-467D-92B9-A010AC93CF42}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {05F4A807-3724-4A59-AE0F-2D18463B8EB6}
