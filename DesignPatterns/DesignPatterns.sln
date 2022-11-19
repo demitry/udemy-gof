@@ -71,6 +71,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrototypeInheritance2", "Cr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CopyThroughSerialization", "Creational\Prototype\CopyThroughSerialization\CopyThroughSerialization.csproj", "{2A22E07B-75F5-4BF6-AA32-DDF33574AE9D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExerciseCodingPrototype", "Creational\Prototype\ExerciseCodingPrototype\ExerciseCodingPrototype.csproj", "{061C952A-9B4C-4CBE-AB50-249C5C213932}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -181,6 +183,10 @@ Global
 		{2A22E07B-75F5-4BF6-AA32-DDF33574AE9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2A22E07B-75F5-4BF6-AA32-DDF33574AE9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2A22E07B-75F5-4BF6-AA32-DDF33574AE9D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{061C952A-9B4C-4CBE-AB50-249C5C213932}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{061C952A-9B4C-4CBE-AB50-249C5C213932}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{061C952A-9B4C-4CBE-AB50-249C5C213932}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{061C952A-9B4C-4CBE-AB50-249C5C213932}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -216,6 +222,7 @@ Global
 		{BA893D91-8401-455E-84C8-1619DE874CD4} = {2C32A587-E6DD-4075-9A89-D05B8653A91D}
 		{60BE5304-D4AD-4431-83E3-6C005899B4F8} = {2C32A587-E6DD-4075-9A89-D05B8653A91D}
 		{2A22E07B-75F5-4BF6-AA32-DDF33574AE9D} = {2C32A587-E6DD-4075-9A89-D05B8653A91D}
+		{061C952A-9B4C-4CBE-AB50-249C5C213932} = {2C32A587-E6DD-4075-9A89-D05B8653A91D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {05F4A807-3724-4A59-AE0F-2D18463B8EB6}

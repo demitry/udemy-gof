@@ -1,6 +1,4 @@
-﻿//using System.Runtime.Serialization.Formatters.Binary;
-using System.ComponentModel.DataAnnotations;
-using System.Xml.Serialization;
+﻿using System.Xml.Serialization;
 
 var john = new Person(new[] { "John", "Smith" }, new Address("London Road", 123));
 
@@ -10,7 +8,7 @@ jane.Names[0] = "Jane";
 Console.WriteLine(john);
 Console.WriteLine(jane);
 
-Console.WriteLine("Seems, deep copy not so deep...");
+Console.WriteLine("Seems, deep copy is not so deep...");
 
 public static class ExtensionMethods
 {
@@ -73,8 +71,8 @@ public class Person
 
 public class Address
 {
-    private string StreetName;
-    public int HouseNumber;
+    private string StreetName = string.Empty;
+    public int HouseNumber = 0;
 
     public Address()
     {
