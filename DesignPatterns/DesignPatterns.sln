@@ -55,17 +55,19 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InnerFactory", "Creational\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AbstractFactory", "Creational\Factories\AbstractFactory\AbstractFactory.csproj", "{6ED69C6D-1DF7-49C6-85D8-FDDF33895705}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExerciseCodingFactory", "Creational\Factories\ExerciseCodingFactory\ExerciseCodingFactory.csproj", "{4188C30E-C7B5-40FB-8D3E-4BFA08213B63}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExerciseCodingFactory", "Creational\Factories\ExerciseCodingFactory\ExerciseCodingFactory.csproj", "{4188C30E-C7B5-40FB-8D3E-4BFA08213B63}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Prototype", "Prototype", "{2C32A587-E6DD-4075-9A89-D05B8653A91D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BadIClonable", "Creational\Prototype\BadIClonable\BadIClonable.csproj", "{C4AF51B3-F6FD-4B25-BA7C-5C646C18AE35}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BadIClonable", "Creational\Prototype\BadIClonable\BadIClonable.csproj", "{C4AF51B3-F6FD-4B25-BA7C-5C646C18AE35}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CopyConstructor", "Creational\Prototype\CopyConstructor\CopyConstructor.csproj", "{8305EF91-EDE1-418A-A069-7D7E1ADFD7EC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CopyConstructor", "Creational\Prototype\CopyConstructor\CopyConstructor.csproj", "{8305EF91-EDE1-418A-A069-7D7E1ADFD7EC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExplicitDeepCopyInterface", "Creational\Prototype\ExplicitDeepCopyInterface\ExplicitDeepCopyInterface.csproj", "{75C88E4B-7819-4A83-AF9B-D0F1452605D3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExplicitDeepCopyInterface", "Creational\Prototype\ExplicitDeepCopyInterface\ExplicitDeepCopyInterface.csproj", "{75C88E4B-7819-4A83-AF9B-D0F1452605D3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrototypeInheritance", "Creational\Prototype\PrototypeInheritance\PrototypeInheritance.csproj", "{BA893D91-8401-455E-84C8-1619DE874CD4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PrototypeInheritance", "Creational\Prototype\PrototypeInheritance\PrototypeInheritance.csproj", "{BA893D91-8401-455E-84C8-1619DE874CD4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrototypeInheritance2", "Creational\Prototype\PrototypeInheritance2\PrototypeInheritance2.csproj", "{60BE5304-D4AD-4431-83E3-6C005899B4F8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -169,6 +171,10 @@ Global
 		{BA893D91-8401-455E-84C8-1619DE874CD4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BA893D91-8401-455E-84C8-1619DE874CD4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BA893D91-8401-455E-84C8-1619DE874CD4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{60BE5304-D4AD-4431-83E3-6C005899B4F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60BE5304-D4AD-4431-83E3-6C005899B4F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60BE5304-D4AD-4431-83E3-6C005899B4F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60BE5304-D4AD-4431-83E3-6C005899B4F8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -202,6 +208,7 @@ Global
 		{8305EF91-EDE1-418A-A069-7D7E1ADFD7EC} = {2C32A587-E6DD-4075-9A89-D05B8653A91D}
 		{75C88E4B-7819-4A83-AF9B-D0F1452605D3} = {2C32A587-E6DD-4075-9A89-D05B8653A91D}
 		{BA893D91-8401-455E-84C8-1619DE874CD4} = {2C32A587-E6DD-4075-9A89-D05B8653A91D}
+		{60BE5304-D4AD-4431-83E3-6C005899B4F8} = {2C32A587-E6DD-4075-9A89-D05B8653A91D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {05F4A807-3724-4A59-AE0F-2D18463B8EB6}
