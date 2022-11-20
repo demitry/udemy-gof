@@ -7,8 +7,27 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <WarningLevel>7</WarningLevel>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <WarningLevel>7</WarningLevel>
+  </PropertyGroup>
+
   <ItemGroup>
+    <PackageReference Include="Microsoft.TestPlatform.AdapterUtilities" Version="17.4.0" />
+    <PackageReference Include="Microsoft.TestPlatform.ObjectModel" Version="17.4.0" />
+    <PackageReference Include="Microsoft.TestPlatform.Portable" Version="17.4.0" />
+    <PackageReference Include="Microsoft.TestPlatform.TestHost" Version="17.4.0" />
+    <PackageReference Include="Microsoft.UnitTestFramework.Extensions" Version="2.0.0" />
+    <PackageReference Include="Microsoft.VisualStudio.TestPlatform" Version="14.0.0" />
     <PackageReference Include="morelinq" Version="3.3.2" />
+    <PackageReference Include="MSTest" Version="2.2.10" />
+    <PackageReference Include="MSTest.TestAdapter" Version="2.2.10" />
+    <PackageReference Include="MSTest.TestFramework" Version="2.2.10" />
+    <PackageReference Include="NUnit" Version="3.13.3" />
+    <PackageReference Include="NUnit3TestAdapter" Version="4.3.1" />
   </ItemGroup>
 
   <ItemGroup>
