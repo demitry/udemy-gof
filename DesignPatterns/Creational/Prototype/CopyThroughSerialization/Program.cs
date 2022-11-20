@@ -44,7 +44,6 @@ public static class ExtensionMethods
     }
 }
 
-
 public class Person
 {
     
@@ -53,6 +52,8 @@ public class Person
 
     public Person()
     {
+        Address = new Address();
+        Names = new string[0];
         //System.InvalidOperationException: 'Person cannot be serialized because it does not have a parameterless constructor.'
     }
 
