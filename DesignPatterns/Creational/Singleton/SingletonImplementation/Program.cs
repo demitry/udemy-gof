@@ -22,10 +22,10 @@ namespace DesignPatterns
         private SingletonDatabase()
         {
             instanceCount++;
-            Console.WriteLine("Initializing database");
 
-            var directory = new FileInfo(typeof(IDatabase).Assembly.Location).DirectoryName;
-            var dbFilePath = Path.Combine(directory, "capitals.txt");
+            Console.WriteLine("Initializing database");
+            
+            string dbFilePath = GetDbFileName();
 
             capitals = File.ReadAllLines(dbFilePath)
                 .Batch(2)
@@ -33,6 +33,23 @@ namespace DesignPatterns
                     list => list.ElementAt(0).Trim(),
                     list => int.Parse(list.ElementAt(1).Trim())
                 );
+        }
+
+        private string GetDbFileName()
+        {
+            string directory = string.Empty;
+            try
+            {
+                directory = new FileInfo(typeof(IDatabase).Assembly.Location).DirectoryName ?? throw new NullReferenceException("Cannot find DB directory.");
+            }
+            catch (NullReferenceException ex)
+            {
+                Console.WriteLine($"Error: {ex.Message}");
+                throw;
+            }
+
+            var dbFilePath = Path.Combine(directory, "capitals.txt");
+            return dbFilePath;
         }
 
         public int GetPopulation(string name)
@@ -46,7 +63,12 @@ namespace DesignPatterns
         public static SingletonDatabase Instance => instance.Value;
     }
 
-    public class SingletonRecordFinder
+    interface IRecordFinder
+    {
+        int GetTotalPopulation(IEnumerable<string> names);
+    }
+
+    public class SingletonRecordFinder : IRecordFinder
     {
         public int GetTotalPopulation(IEnumerable<string> names)
         {
@@ -57,6 +79,40 @@ namespace DesignPatterns
             }
 
             return result;
+        }
+    }
+
+    public class ConfigurableRecordFinder : IRecordFinder
+    {
+        IDatabase database;
+
+        public ConfigurableRecordFinder(IDatabase database)
+        {
+            this.database = database ?? throw new ArgumentNullException(paramName: nameof(database));
+        }
+
+        public int GetTotalPopulation(IEnumerable<string> names)
+        {
+            int result = 0;
+            foreach (string name in names)
+            {
+                result += database.GetPopulation(name);
+            }
+
+            return result;
+        }
+    }
+
+    public class DummyDatabase : IDatabase
+    {
+        public int GetPopulation(string name)
+        {
+            return new Dictionary<string, int>
+            {
+                ["alpha"] = 1,
+                ["beta"] = 2,
+                ["gamma"] = 3
+            }[name];
         }
     }
 
@@ -83,5 +139,14 @@ namespace DesignPatterns
 
         // Problem: We dependent on live database!
         // RecordFinder has a hard-coded reference to the singleton instance!
+
+        [Test]
+        public void ConfigurablePopulationTest()
+        {
+            var recordFinder = new ConfigurableRecordFinder(new DummyDatabase());
+            var names = new[] { "alpha", "gamma" };
+            int totalCount = recordFinder.GetTotalPopulation(names);
+            Assert.That(totalCount, Is.EqualTo(4));
+        }
     }
 }
