@@ -16,6 +16,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Autofac" Version="6.5.0" />
     <PackageReference Include="Microsoft.TestPlatform.AdapterUtilities" Version="17.4.0" />
     <PackageReference Include="Microsoft.TestPlatform.ObjectModel" Version="17.4.0" />
     <PackageReference Include="Microsoft.TestPlatform.Portable" Version="17.4.0" />

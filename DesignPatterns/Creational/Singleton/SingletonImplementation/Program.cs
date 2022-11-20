@@ -1,4 +1,5 @@
-﻿using DesignPatterns;
+﻿using Autofac;
+using DesignPatterns;
 using MoreLinq;
 using NUnit.Framework;
 
@@ -13,29 +14,9 @@ namespace DesignPatterns
         int GetPopulation(string name);
     }
 
-    public class SingletonDatabase : IDatabase
+    public class DBUtils
     {
-        private Dictionary<string, int> capitals;
-        private static int instanceCount = 0;
-        public static int Count => instanceCount;
-
-        private SingletonDatabase()
-        {
-            instanceCount++;
-
-            Console.WriteLine("Initializing database");
-            
-            string dbFilePath = GetDbFileName();
-
-            capitals = File.ReadAllLines(dbFilePath)
-                .Batch(2)
-                .ToDictionary(
-                    list => list.ElementAt(0).Trim(),
-                    list => int.Parse(list.ElementAt(1).Trim())
-                );
-        }
-
-        private string GetDbFileName()
+        public static string GetDbFileName()
         {
             string directory = string.Empty;
             try
@@ -51,16 +32,57 @@ namespace DesignPatterns
             var dbFilePath = Path.Combine(directory, "capitals.txt");
             return dbFilePath;
         }
+    }
 
-        public int GetPopulation(string name)
+    public class SingletonDatabase : IDatabase
+    {
+        private Dictionary<string, int> capitals;
+        private static int instanceCount = 0;
+        public static int Count => instanceCount;
+
+        private SingletonDatabase()
         {
-            return capitals[name];
+            instanceCount++;
+
+            Console.WriteLine("Initializing Singleton database");
+            
+            string dbFilePath = DBUtils.GetDbFileName();
+
+            capitals = File.ReadAllLines(dbFilePath)
+                .Batch(2)
+                .ToDictionary(
+                    list => list.ElementAt(0).Trim(),
+                    list => int.Parse(list.ElementAt(1).Trim())
+                );
         }
+
+        public int GetPopulation(string name) => capitals[name];
 
         private static Lazy<SingletonDatabase> instance =
             new Lazy<SingletonDatabase>(() => new SingletonDatabase());
 
         public static SingletonDatabase Instance => instance.Value;
+    }
+
+    public class OrdinaryDatabase: IDatabase
+    {
+        private Dictionary<string, int> capitals;
+
+        public OrdinaryDatabase()
+        {
+            Console.WriteLine("Initializing Ordinary database");
+
+            string dbFilePath = DBUtils.GetDbFileName();
+
+            capitals = File.ReadAllLines(dbFilePath)
+                .Batch(2)
+                .ToDictionary(
+                    list => list.ElementAt(0).Trim(),
+                    list => int.Parse(list.ElementAt(1).Trim())
+                );
+        }
+
+        public int GetPopulation(string name) => capitals[name];
     }
 
     interface IRecordFinder
@@ -148,5 +170,43 @@ namespace DesignPatterns
             int totalCount = recordFinder.GetTotalPopulation(names);
             Assert.That(totalCount, Is.EqualTo(4));
         }
+
+        [Test]
+        public void DI_RealDB_PopulationTest()
+        {
+            var containerBuilder = new ContainerBuilder();
+            containerBuilder.RegisterType<OrdinaryDatabase>() //Single point to change the DB to test
+                .As<IDatabase>()
+                .SingleInstance(); //Singleton
+
+            containerBuilder.RegisterType<ConfigurableRecordFinder>();
+            var names = new[] { "Tokyo", "New York", "San Paulo" };
+            using (var container = containerBuilder.Build())
+            {
+                var recordFinder = container.Resolve<ConfigurableRecordFinder>();
+                int totalCount = recordFinder.GetTotalPopulation(names);
+                Assert.That(totalCount, Is.EqualTo(33200000 + 17800000 + 17700000));
+            }
+        }
+
+        [Test]
+        public void DI_DummyDB_PopulationTest()
+        {
+            var containerBuilder = new ContainerBuilder();
+            containerBuilder.RegisterType<DummyDatabase>() //Single point to change the DB to test
+                .As<IDatabase>()
+                .SingleInstance(); //Singleton
+
+            containerBuilder.RegisterType<ConfigurableRecordFinder>();
+            var names = new[] { "alpha", "gamma" };
+
+            using (var container = containerBuilder.Build())
+            {
+                var recordFinder = container.Resolve<ConfigurableRecordFinder>();
+                int totalCount = recordFinder.GetTotalPopulation(names);
+                Assert.That(totalCount, Is.EqualTo(4));
+            }
+        }
+
     }
 }
