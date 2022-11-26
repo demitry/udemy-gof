@@ -77,9 +77,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Singleton", "Singleton", "{
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SingletonImplementation", "Creational\Singleton\SingletonImplementation\SingletonImplementation.csproj", "{3089B878-67DD-439B-86C0-E605DCDE6D76}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Monostate", "Creational\Singleton\Monostate\Monostate.csproj", "{C768428A-7BFB-408A-AE2A-E5A483635F78}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Monostate", "Creational\Singleton\Monostate\Monostate.csproj", "{C768428A-7BFB-408A-AE2A-E5A483635F78}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PerThreadSingleton", "Creational\Prototype\PerThreadSingleton\PerThreadSingleton.csproj", "{258E3149-AC1C-41F4-8DC7-3A680A88BE2F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PerThreadSingleton", "Creational\Prototype\PerThreadSingleton\PerThreadSingleton.csproj", "{258E3149-AC1C-41F4-8DC7-3A680A88BE2F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AmbientContext", "Creational\Singleton\AmbientContext\AmbientContext.csproj", "{C026E86E-6ACB-4911-8FA8-6A37F1434D93}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -207,6 +209,10 @@ Global
 		{258E3149-AC1C-41F4-8DC7-3A680A88BE2F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{258E3149-AC1C-41F4-8DC7-3A680A88BE2F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{258E3149-AC1C-41F4-8DC7-3A680A88BE2F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C026E86E-6ACB-4911-8FA8-6A37F1434D93}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C026E86E-6ACB-4911-8FA8-6A37F1434D93}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C026E86E-6ACB-4911-8FA8-6A37F1434D93}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C026E86E-6ACB-4911-8FA8-6A37F1434D93}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -247,6 +253,7 @@ Global
 		{3089B878-67DD-439B-86C0-E605DCDE6D76} = {444E731E-3F65-4C67-B7E2-05DE764A3ACE}
 		{C768428A-7BFB-408A-AE2A-E5A483635F78} = {444E731E-3F65-4C67-B7E2-05DE764A3ACE}
 		{258E3149-AC1C-41F4-8DC7-3A680A88BE2F} = {444E731E-3F65-4C67-B7E2-05DE764A3ACE}
+		{C026E86E-6ACB-4911-8FA8-6A37F1434D93} = {444E731E-3F65-4C67-B7E2-05DE764A3ACE}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {05F4A807-3724-4A59-AE0F-2D18463B8EB6}
