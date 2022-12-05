@@ -81,9 +81,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Monostate", "Creational\Sin
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PerThreadSingleton", "Creational\Prototype\PerThreadSingleton\PerThreadSingleton.csproj", "{258E3149-AC1C-41F4-8DC7-3A680A88BE2F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AmbientContext", "Creational\Singleton\AmbientContext\AmbientContext.csproj", "{C026E86E-6ACB-4911-8FA8-6A37F1434D93}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AmbientContext", "Creational\Singleton\AmbientContext\AmbientContext.csproj", "{C026E86E-6ACB-4911-8FA8-6A37F1434D93}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExerciseCodingSingleton", "Creational\Singleton\ExerciseCodingSingleton\ExerciseCodingSingleton.csproj", "{E71E6DA8-38ED-4BFB-9F1D-E7D5E8AFD18C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExerciseCodingSingleton", "Creational\Singleton\ExerciseCodingSingleton\ExerciseCodingSingleton.csproj", "{E71E6DA8-38ED-4BFB-9F1D-E7D5E8AFD18C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VectorRasterDemo", "Structural\Adapter\VectorRasterDemo\VectorRasterDemo.csproj", "{F80E3237-BB89-4AC2-990D-1824B32CDD16}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Adapter", "Adapter", "{B1CD6006-EB2A-4F89-8241-4EBECFF3DEB5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -219,6 +223,10 @@ Global
 		{E71E6DA8-38ED-4BFB-9F1D-E7D5E8AFD18C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E71E6DA8-38ED-4BFB-9F1D-E7D5E8AFD18C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E71E6DA8-38ED-4BFB-9F1D-E7D5E8AFD18C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F80E3237-BB89-4AC2-990D-1824B32CDD16}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F80E3237-BB89-4AC2-990D-1824B32CDD16}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F80E3237-BB89-4AC2-990D-1824B32CDD16}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F80E3237-BB89-4AC2-990D-1824B32CDD16}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -261,6 +269,8 @@ Global
 		{258E3149-AC1C-41F4-8DC7-3A680A88BE2F} = {444E731E-3F65-4C67-B7E2-05DE764A3ACE}
 		{C026E86E-6ACB-4911-8FA8-6A37F1434D93} = {444E731E-3F65-4C67-B7E2-05DE764A3ACE}
 		{E71E6DA8-38ED-4BFB-9F1D-E7D5E8AFD18C} = {444E731E-3F65-4C67-B7E2-05DE764A3ACE}
+		{F80E3237-BB89-4AC2-990D-1824B32CDD16} = {B1CD6006-EB2A-4F89-8241-4EBECFF3DEB5}
+		{B1CD6006-EB2A-4F89-8241-4EBECFF3DEB5} = {F7EEAE2D-36E1-4424-8020-C833B143342D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {05F4A807-3724-4A59-AE0F-2D18463B8EB6}
