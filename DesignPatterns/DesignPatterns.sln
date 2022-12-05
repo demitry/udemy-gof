@@ -85,9 +85,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AmbientContext", "Creationa
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExerciseCodingSingleton", "Creational\Singleton\ExerciseCodingSingleton\ExerciseCodingSingleton.csproj", "{E71E6DA8-38ED-4BFB-9F1D-E7D5E8AFD18C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VectorRasterDemo", "Structural\Adapter\VectorRasterDemo\VectorRasterDemo.csproj", "{F80E3237-BB89-4AC2-990D-1824B32CDD16}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VectorRasterDemo", "Structural\Adapter\VectorRasterDemo\VectorRasterDemo.csproj", "{F80E3237-BB89-4AC2-990D-1824B32CDD16}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Adapter", "Adapter", "{B1CD6006-EB2A-4F89-8241-4EBECFF3DEB5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bridge", "Structural\Bridge\Bridge\Bridge.csproj", "{D54EC7D3-E54B-466E-A6E9-3F5579256F5F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -227,6 +229,10 @@ Global
 		{F80E3237-BB89-4AC2-990D-1824B32CDD16}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F80E3237-BB89-4AC2-990D-1824B32CDD16}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F80E3237-BB89-4AC2-990D-1824B32CDD16}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D54EC7D3-E54B-466E-A6E9-3F5579256F5F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D54EC7D3-E54B-466E-A6E9-3F5579256F5F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D54EC7D3-E54B-466E-A6E9-3F5579256F5F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D54EC7D3-E54B-466E-A6E9-3F5579256F5F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -271,6 +277,7 @@ Global
 		{E71E6DA8-38ED-4BFB-9F1D-E7D5E8AFD18C} = {444E731E-3F65-4C67-B7E2-05DE764A3ACE}
 		{F80E3237-BB89-4AC2-990D-1824B32CDD16} = {B1CD6006-EB2A-4F89-8241-4EBECFF3DEB5}
 		{B1CD6006-EB2A-4F89-8241-4EBECFF3DEB5} = {F7EEAE2D-36E1-4424-8020-C833B143342D}
+		{D54EC7D3-E54B-466E-A6E9-3F5579256F5F} = {B1CD6006-EB2A-4F89-8241-4EBECFF3DEB5}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {05F4A807-3724-4A59-AE0F-2D18463B8EB6}
