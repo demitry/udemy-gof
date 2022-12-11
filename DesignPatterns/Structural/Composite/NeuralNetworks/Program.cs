@@ -26,8 +26,9 @@ namespace NeuralNetworks
         public class Neuron : IEnumerable<Neuron>
         {
             public float value;
-            public List<Neuron> In, Out;
-
+            public List<Neuron> In => (new Lazy<List<Neuron>>()).Value;
+            public List<Neuron> Out => (new Lazy<List<Neuron>>()).Value;
+            
             public IEnumerator<Neuron> GetEnumerator()
             {
                 yield return this; // I am an only element
