@@ -99,6 +99,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Composite", "Composite", "{
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeometricShapes", "Structural\Composite\GeometricShapes\GeometricShapes.csproj", "{65375BAE-2E9F-4B1C-9D9C-AE05ACEB0038}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NeuralNetworks", "Structural\Composite\NeuralNetworks\NeuralNetworks.csproj", "{E32F49F9-6BE4-42C2-85A1-D24FE7AD8B2D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -249,6 +251,10 @@ Global
 		{65375BAE-2E9F-4B1C-9D9C-AE05ACEB0038}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{65375BAE-2E9F-4B1C-9D9C-AE05ACEB0038}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{65375BAE-2E9F-4B1C-9D9C-AE05ACEB0038}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E32F49F9-6BE4-42C2-85A1-D24FE7AD8B2D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E32F49F9-6BE4-42C2-85A1-D24FE7AD8B2D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E32F49F9-6BE4-42C2-85A1-D24FE7AD8B2D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E32F49F9-6BE4-42C2-85A1-D24FE7AD8B2D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -298,6 +304,7 @@ Global
 		{7AD0D652-F3E2-47FD-97FB-C10954C96FC1} = {F0526C36-6C5D-412C-B24C-970CC9F6975A}
 		{ED6BCAF3-DC0B-4F3D-AA0A-F0A91608DC10} = {F7EEAE2D-36E1-4424-8020-C833B143342D}
 		{65375BAE-2E9F-4B1C-9D9C-AE05ACEB0038} = {ED6BCAF3-DC0B-4F3D-AA0A-F0A91608DC10}
+		{E32F49F9-6BE4-42C2-85A1-D24FE7AD8B2D} = {ED6BCAF3-DC0B-4F3D-AA0A-F0A91608DC10}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {05F4A807-3724-4A59-AE0F-2D18463B8EB6}
