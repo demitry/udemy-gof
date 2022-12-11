@@ -1,19 +1,41 @@
-﻿using System.Collections.ObjectModel;
+﻿using System.Collections;
+using System.Collections.ObjectModel;
 using static NeuralNetworks.Program;
 
 namespace NeuralNetworks
 {
-    internal class Program
+    // Solution: treat Neuron and NeuronLayer as a collection of Neuron
+
+    public static class ExtentiosionMethods
     {
-        public class Neuron
+        public static void ConnectTo(this IEnumerable<Neuron> self, IEnumerable<Neuron> other)
+        {
+            if (ReferenceEquals(self, other)) return;
+
+            foreach (var from in self)
+                foreach (var to in other)
+                {
+                    from.Out.Add(to);
+                    to.In.Add(from);
+                }
+        }
+    }
+
+    public class Program
+    {
+        public class Neuron : IEnumerable<Neuron>
         {
             public float value;
             public List<Neuron> In, Out;
 
-            public void ConnectTo(Neuron other)
+            public IEnumerator<Neuron> GetEnumerator()
             {
-                Out.Add(other);
-                other.In.Add(this);
+                yield return this; // I am an only element
+            }
+
+            IEnumerator IEnumerable.GetEnumerator()
+            {
+                return GetEnumerator();
             }
         }
 
@@ -38,6 +60,9 @@ namespace NeuralNetworks
             // layer to layer
             // layer to neuron
 
+            neuron1.ConnectTo(neuron2);
+            layer1.ConnectTo(layer2);
+            neuron1.ConnectTo(layer2);
         }
     }
 }
